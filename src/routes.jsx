@@ -8,18 +8,23 @@ import TemplateAreasGrid from "./pages/TemplateAreasGrid/TemplateAreasGrid";
 import AutoFitGrid from "./pages/AutoFitGrid/AutoFitGrid";
 import NestedGrids from "./pages/NestedGrids/NestedGrids";
 
-export const routes = createBrowserRouter([
+export const routes = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        { index: true, Component: Home },
+        { path: "basic-grid", Component: BasicGrid },
+        { path: "varying-column-size", Component: VaryingColumnSizeGrid },
+        { path: "custom-item-placement", Component: CustomItemPlacement },
+        { path: "template-areas-grid", Component: TemplateAreasGrid },
+        { path: "auto-fit-grid", Component: AutoFitGrid },
+        { path: "nested-grids", Component: NestedGrids },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      { index: true, Component: Home },
-      { path: "basic-grid", Component: BasicGrid },
-      { path: "varying-column-size", Component: VaryingColumnSizeGrid },
-      { path: "custom-item-placement", Component: CustomItemPlacement },
-      { path: "template-areas-grid", Component: TemplateAreasGrid },
-      { path: "auto-fit-grid", Component: AutoFitGrid },
-      { path: "nested-grids", Component: NestedGrids },
-    ],
-  },
-]);
+    basename: "/css-grid",
+  }
+);
