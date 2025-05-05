@@ -1,0 +1,46 @@
+.container {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.rootGridContainer {
+  display: grid;
+  /* It's not mandatory to use both properties. If you give one, the other is auto calculated */
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ddd;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.rootGridChild {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ddd;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9ab55;
+  text-align: center;
+}
+
+.rootGridChild:nth-child(even) {
+  background-color: #ff6347;
+}
+
+.nestedGrid1Child {
+  background-color: #3498db;
+  text-align: center;
+}
+
+.nestedGrid2Child {
+  background-color: #3498db;
+  text-align: center;
+}
+
+.item1 {
+  grid-column: 1 / 3; /* Span columns 1 to 2 */
+  grid-row: 1 / 3; /* Row 1 */
+}
+.item5 {
+  grid-column: 2 / 4; /* Span columns 2 to 3 */
+}

@@ -1,0 +1,30 @@
+.container {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  /* It's not mandatory to use both properties. If you give one, the other is auto calculated */
+  /* Here instead of specifying the number of columns, we are specifying the minimum size of the column */
+  /* and the maximum size of the column. */
+  /* The browser will automatically calculate the number of columns based on the available space */
+  /* This is very similar to flex wrap property of flexbox */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background-color: #ddd;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.box {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.box:nth-child(even) {
+  background-color: #ff6347; /* Tomato */
+}

@@ -1,0 +1,42 @@
+.container {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "sidebar main main" "footer footer footer";
+  background-color: #ddd;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.box {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  min-height: 100px;
+}
+
+.box:nth-child(even) {
+  background-color: #ff6347; /* Tomato */
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sidebar;
+}

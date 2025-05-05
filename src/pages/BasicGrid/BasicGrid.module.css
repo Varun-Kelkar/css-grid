@@ -1,0 +1,27 @@
+.container {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  /* It's not mandatory to use both properties. If you give one, the other is auto calculated */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  background-color: #ddd;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.box {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.box:nth-child(even) {
+  background-color: #ff6347; /* Tomato */
+}
