@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "css-grid-demo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
