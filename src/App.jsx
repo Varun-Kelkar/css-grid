@@ -6,17 +6,9 @@ function App() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   return (
-    <div>
-      {isHomePage ? null : (
-        <Link
-          to="/"
-          style={{
-            color: "#3498db",
-            textDecoration: "none",
-            padding: "1rem",
-            fontSize: "1.4rem",
-          }}
-        >
+    <div className="layout-container">
+      {!isHomePage && (
+        <Link to="/" className="home-link">
           Home
         </Link>
       )}

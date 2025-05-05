@@ -1,6 +1,5 @@
 .container {
   background-color: #fff;
-  border: 2px solid black;
   margin: 1rem;
   padding: 1rem;
 }
@@ -24,5 +23,3 @@
 .box:nth-child(even) {
   background-color: #ff6347; /* Tomato */
 }
-
-

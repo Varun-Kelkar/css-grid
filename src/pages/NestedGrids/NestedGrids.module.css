@@ -16,6 +16,7 @@
 .rootGridChild {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
   background-color: #ddd;
   gap: 1rem;
   padding: 1rem;
