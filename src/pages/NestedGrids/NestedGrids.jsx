@@ -6,22 +6,20 @@ const NestedGrids = () => {
       <h1>Nested Grids</h1>
       <div className={styles.rootGridContainer}>
         <div className={styles.rootGridChild}>
-          <div className={styles.nestedGrid1Child}>1</div>
-          <div className={styles.nestedGrid1Child}>2</div>
-          <div className={styles.nestedGrid1Child}>3</div>
-          <div className={styles.nestedGrid1Child}>4</div>
-          <div className={styles.nestedGrid1Child}>5</div>
-          <div className={styles.nestedGrid1Child}>6</div>
-          <div className={styles.nestedGrid1Child}>7</div>
-          <div className={styles.nestedGrid1Child}>8</div>
-          <div className={styles.nestedGrid1Child}>9</div>
-        </div>
-        <div className={styles.rootGridChild}>
-          <div className={`${styles.nestedGrid2Child} ${styles.item1}`}>1</div>
-          <div className={styles.nestedGrid2Child}>2</div>
-          <div className={styles.nestedGrid2Child}>3</div>
-          <div className={styles.nestedGrid2Child}>4</div>
-          <div className={`${styles.nestedGrid2Child} ${styles.item5}`}>5</div>
+          <div className={`${styles.nestedGridChild} ${styles.item1}`}>
+            <div
+              className={`${styles.item1Child} ${styles.item1ChildContainer}`}
+            >
+              <div className={styles.item1NestedChildren}></div>
+              <div className={styles.item1NestedChildren}></div>
+              <div className={styles.item1NestedChildren}></div>
+            </div>
+            <div className={styles.item1Child}></div>
+          </div>
+          <div className={styles.nestedGridChild}></div>
+          <div className={styles.nestedGridChild}></div>
+          <div className={styles.nestedGridChild}></div>
+          <div className={`${styles.nestedGridChild} ${styles.item5}`}></div>
         </div>
       </div>
     </div>
