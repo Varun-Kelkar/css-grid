@@ -1,6 +1,5 @@
 .container {
   background-color: #fff;
-  margin: 1rem;
   padding: 1rem;
 }
 
@@ -33,4 +32,20 @@
 
 .box-5 {
   grid-column: 2 / 4; /* Span columns 2 to 3 */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .box-1 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .box-5 {
+    grid-column: auto;
+  }
 }

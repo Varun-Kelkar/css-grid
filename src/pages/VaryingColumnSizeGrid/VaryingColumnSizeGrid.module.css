@@ -1,6 +1,5 @@
 .container {
   background-color: #fff;
-  margin: 1rem;
   padding: 1rem;
 }
 
@@ -10,6 +9,13 @@
   background-color: #ddd;
   gap: 1rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
 }
 
 .box {

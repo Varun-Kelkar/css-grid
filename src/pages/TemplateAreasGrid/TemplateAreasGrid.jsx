@@ -5,10 +5,10 @@ const TemplateAreasGrid = () => {
     <div className={styles.container}>
       <h1>Template Areas Grid</h1>
       <div className={styles["grid-container"]}>
-        <div className={`${styles.box} ${styles.header}`}>Header</div>
-        <div className={`${styles.box} ${styles.sidebar}`}>Sidebar</div>
-        <div className={`${styles.box} ${styles.main}`}>Main Content</div>
-        <div className={`${styles.box} ${styles.footer}`}>Footer</div>
+        <header className={`${styles.box} ${styles.header}`}>Header</header>
+        <aside className={`${styles.box} ${styles.sidebar}`}>Sidebar</aside>
+        <main className={`${styles.box} ${styles.main}`}>Main Content</main>
+        <footer className={`${styles.box} ${styles.footer}`}>Footer</footer>
       </div>
     </div>
   );

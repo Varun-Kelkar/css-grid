@@ -8,9 +8,21 @@ function App() {
   return (
     <div className="layout-container">
       {!isHomePage && (
-        <Link to="/" className="home-link">
-          Home
-        </Link>
+        <>
+          <Link to="/" className="home-link">
+            Home
+          </Link>
+          <div className="help-info">
+            <p>
+              If using mobile, please rotate your screen to see the
+              responsiveness
+            </p>
+            <p>
+              If using desktop, please resize your screen to see the
+              responsiveness
+            </p>
+          </div>
+        </>
       )}
       <Outlet />
     </div>
